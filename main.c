@@ -5,6 +5,7 @@ int main(void)
 {
     char line[128];
     int value;
+    printf("Program  begins!");
     printf("Enter an integer: ");
     fgets(line, sizeof(line), stdin);
 
