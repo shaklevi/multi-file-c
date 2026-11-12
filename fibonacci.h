@@ -1,5 +1,5 @@
-#ifndef ______INT_PARSER_H_______
-#define ______INT_PARSER_H_______
+#ifndef ______FIBONACCI_______
+#define ______FIBONACCI_______
 
 /** \brief parses a c-string into an int
  *
@@ -11,4 +11,6 @@
  */
 int parse_int(const char *s, int *out);
 
-#endif // ______INT_PARSER_H_______
+void printFibonacci(int limit);
+
+#endif // ______FIBONACCI_______
