@@ -1,20 +1,23 @@
 #include <stdio.h>
-#include "int_parser.h"
+#include "fibonacci.h"
 
 int main(void)
 {
     char line[128];
-    int value;
+    int limit;
     printf("Program  begins!");
     printf("Enter an integer: ");
     fgets(line, sizeof(line), stdin);
 
-    if (!parse_int(line, &value))
+    if (!parse_int(line, &limit))
     {
         fprintf(stderr, "Invalid integer.\n");
         return 1;
     }
 
     printf("Parsed: %d\n", value);
+
+     printFibonacci(limit);
+
     return 0;
 }
