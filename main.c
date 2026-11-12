@@ -15,7 +15,7 @@ int main(void)
         return 1;
     }
 
-    printf("Parsed: %d\n", value);
+    printf("Parsed: %d\n", limit);
 
      printFibonacci(limit);
 

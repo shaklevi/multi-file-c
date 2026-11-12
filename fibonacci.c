@@ -1,6 +1,7 @@
 #include <stdlib.h> // strtol
 #include <errno.h>
 #include <limits.h> // INT_MAX/MIN
+#include <stdio.h>
 
 int parse_int(const char *s, int *out)
 {
@@ -36,6 +37,7 @@ int parse_int(const char *s, int *out)
     return 1;
 }
 
+
 void printFibonacci(int limit) {
     int first = 0, second = 1, next;
 
@@ -48,3 +50,5 @@ void printFibonacci(int limit) {
         second = next;
         next = first + second;
     }
+
+}

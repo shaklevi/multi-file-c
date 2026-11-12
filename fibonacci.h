@@ -11,6 +11,6 @@
  */
 int parse_int(const char *s, int *out);
 
-void fibonacci(int limit);
+void printFibonacci(int limit);
 
 #endif // ______FIBONACCI_______
