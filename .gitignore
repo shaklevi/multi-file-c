@@ -1,0 +1,5 @@
+artifacts/
+*.o
+*.d
+*.so*
+*.a
