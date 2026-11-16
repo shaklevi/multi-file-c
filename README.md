@@ -1,37 +1,3 @@
-New Build! game test!
-## What the build exercises
-
-| Concept                         | Where                                           |
-|---------------------------------|-------------------------------------------------|
-| Static library (`ar`)           | `libfibcore.a`                                  |
-| Shared library + soname + symlinks, `-fPIC` | `libfibutil.so.1.0.0`               |
-| Runtime linking (`rpath $ORIGIN`) | `ldd artifacts/release/bin/fibtool`           |
-| Generated source (`version.h`)  | Makefile rule, uses `version.txt`, git SHA, `BUILD_NUMBER` |
-| Header dependency tracking      | `-MMD -MP` / `.d` files                         |
-| Build flavours in isolated dirs | `BUILD=release|debug|asan`                      |
-| Warnings as errors              | `WERROR=1`                                      |
-| Test reports Jenkins can parse  | `artifacts/<flavour>/test-reports/junit.xml`    |
-| Static analysis                 | `make lint` (cppcheck)                          |
-| Install staging / packaging     | `make install DESTDIR=... ` / `make dist`       |
-
-## Practice exercises
-
-1. **Break it on purpose.** Change an assertion in `tests/test_primes.c`; confirm the
-   stage turns red and the JUnit report shows the failing test.
-2. **Warning gate.** Add an unused variable; it passes locally but fails in CI
-   because of `WERROR=1`. Why is that a useful policy?
-3. **Missing dependency.** Remove `cppcheck` from the agent (or install it) and
-   watch the Lint stage flip between UNSTABLE and SUCCESS.
-4. **Shared library hell.** Copy only `bin/fibtool` elsewhere and run it. Fix it
-   using `LD_LIBRARY_PATH`, then via `rpath`. Check with `ldd`.
-5. **Dockerise the agent.** Switch the Jenkinsfile to `agent { docker { image 'gcc:13' } }`
-   and install cppcheck in a custom image.
-6. **Caching.** Run `make` twice - the 2nd run should do nothing. Then `touch include/primes.h`
-   and note which objects rebuild. Which Jenkins strategy keeps `artifacts/` between builds, and
-   what is the risk?
-7. **Stretch:** add `--coverage` (gcov/lcov + Cobertura publisher), a `clang` matrix
-   entry (`make CC=clang`), or a cross-compile with `CC=aarch64-linux-gnu-gcc`.
-=======
 <div align="center">
   <img src="imgs/logo.png" width="320px" alt="Maze Escape">
 </div>
@@ -43,9 +9,15 @@ New Build! game test!
 [![Last Commit](https://custom-icon-badges.demolab.com/github/last-commit/marsdevx/maze-escape?logoColor=white&labelColor=2C2C2C&label=Last%20Commit&color=8A2BE2&logo=mark-github)](https://github.com/marsdevx/maze-escape/commits/main "Last Commit")
 [![Platforms](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Platforms&message=macOS%20|%20Linux&color=D32F2F&logo=device-desktop)](https://github.com/marsdevx/maze-escape "Platforms")
 <br>
-[![Languages](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Languages&message=C
+[![Languages](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Languages&message=C%20language&color=748ADB&logo=file-code)](https://github.com/marsdevx/maze-escape "Languages")
+[![Genre](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Genre&message=Puzzle&color=F47F42&logo=goal)](https://github.com/marsdevx/maze-escape "Genre")
+[![Assets](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Assets&message=%206%20&color=15CDD3&logo=file-media)](https://github.com/marsdevx/maze-escape/tree/main/textures "Assets")
+[![Levels](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Levels&message=%204%20&color=C2185B&logo=filter)](https://github.com/marsdevx/maze-escape/tree/main/levels "Levels")
+[![License](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=License&message=MIT&color=00C853&logo=law)](https://github.com/marsdevx/maze-escape/blob/main/LICENSE "License")
+
+</div>
+
 ---
-=======
 
 # 🧩 Maze Escape
 
@@ -209,6 +181,3 @@ If you like this project, don’t forget to ⭐ **star** it and **follow** me!
 Your **support** helps me create more projects. 🚀  
 
 🔗 **Explore more of my work on [GitHub](https://github.com/marsdevx?tab=repositories) and discover other exciting projects!**
-
- (maze-game)
-
