@@ -1,5 +1,4 @@
-# Maze Game 
-
+Build game test!
 ## What the build exercises
 
 | Concept                         | Where                                           |
@@ -46,6 +45,7 @@
 <br>
 [![Languages](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Languages&message=C
 ---
+=======
 
 # 🧩 Maze Escape
 
@@ -209,5 +209,6 @@ If you like this project, don’t forget to ⭐ **star** it and **follow** me!
 Your **support** helps me create more projects. 🚀  
 
 🔗 **Explore more of my work on [GitHub](https://github.com/marsdevx?tab=repositories) and discover other exciting projects!**
-(maze-game)
-Test Build
+
+ (maze-game)
+
