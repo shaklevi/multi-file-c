@@ -1,33 +1,4 @@
-<<<<<<< HEAD
-# fibtool - C build practice for Jenkins
-
-A small CLI (Fibonacci series / primes) deliberately split into several build
-artifacts so the pipeline has real work to do. Triggered by a PR webhook.
-
-```
-include/   public headers
-src/       main.c, fibonacci.c, primes.c, parse.c  -> libfibcore.a  (static)
-           fibutil.c                               -> libfibutil.so (shared)
-tests/     tiny test framework that emits JUnit XML
-version.txt  "Build N" - overridden by Jenkins' BUILD_NUMBER
-Makefile / Jenkinsfile
-```
-
-## Usage
-
-```sh
-make                       # release build  -> artifacts/release/bin/fibtool
-make BUILD=debug           # separate dir   -> artifacts/debug/
-make BUILD=asan            # sanitizers     -> artifacts/asan/
-make test WERROR=1         # build, run unit + smoke tests, write JUnit XML
-make lint                  # needs cppcheck
-make dist                  # artifacts/fibtool-<ver>-<sha>-release.tar.gz
-make help
-
-artifacts/release/bin/fibtool -n 100       # fibonacci up to 100
-artifacts/release/bin/fibtool -p -n 100    # primes up to 100
-FIBTOOL_LOG=debug artifacts/release/bin/fibtool -V
-```
+# Maze Game 
 
 ## What the build exercises
 
@@ -73,14 +44,7 @@ FIBTOOL_LOG=debug artifacts/release/bin/fibtool -V
 [![Last Commit](https://custom-icon-badges.demolab.com/github/last-commit/marsdevx/maze-escape?logoColor=white&labelColor=2C2C2C&label=Last%20Commit&color=8A2BE2&logo=mark-github)](https://github.com/marsdevx/maze-escape/commits/main "Last Commit")
 [![Platforms](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Platforms&message=macOS%20|%20Linux&color=D32F2F&logo=device-desktop)](https://github.com/marsdevx/maze-escape "Platforms")
 <br>
-[![Languages](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Languages&message=C%20language&color=748ADB&logo=file-code)](https://github.com/marsdevx/maze-escape "Languages")
-[![Genre](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Genre&message=Puzzle&color=F47F42&logo=goal)](https://github.com/marsdevx/maze-escape "Genre")
-[![Assets](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Assets&message=%206%20&color=15CDD3&logo=file-media)](https://github.com/marsdevx/maze-escape/tree/main/textures "Assets")
-[![Levels](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Levels&message=%204%20&color=C2185B&logo=filter)](https://github.com/marsdevx/maze-escape/tree/main/levels "Levels")
-[![License](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=License&message=MIT&color=00C853&logo=law)](https://github.com/marsdevx/maze-escape/blob/main/LICENSE "License")
-
-</div>
-
+[![Languages](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Languages&message=C
 ---
 
 # 🧩 Maze Escape
@@ -245,4 +209,5 @@ If you like this project, don’t forget to ⭐ **star** it and **follow** me!
 Your **support** helps me create more projects. 🚀  
 
 🔗 **Explore more of my work on [GitHub](https://github.com/marsdevx?tab=repositories) and discover other exciting projects!**
->>>>>>> 8758a5e (maze-game)
+(maze-game)
+Test Build
