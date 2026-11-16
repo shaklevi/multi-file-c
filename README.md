@@ -1,4 +1,4 @@
-Test!
+Test1!
 
 <div align="center">
   <img src="imgs/logo.png" width="320px" alt="Maze Escape">
