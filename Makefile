@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ============================================================================
 # fibtool - multi-module C project (Jenkins practice)
 #
@@ -276,4 +275,4 @@ clean:
 	@echo "Clean complete."
 
 .PHONY: linux macos clean
->>>>>>> 8758a5e (maze-game)
+
