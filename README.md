@@ -1,4 +1,4 @@
-Buikd gmae test!
+Build game test!
 ## What the build exercises
 
 | Concept                         | Where                                           |
@@ -53,8 +53,6 @@ Buikd gmae test!
 
 ---
 =======
-Test build code!
->>>>>>> 9d9ad2f (Edit README.me)
 
 # 🧩 Maze Escape
 
@@ -218,6 +216,6 @@ If you like this project, don’t forget to ⭐ **star** it and **follow** me!
 Your **support** helps me create more projects. 🚀  
 
 🔗 **Explore more of my work on [GitHub](https://github.com/marsdevx?tab=repositories) and discover other exciting projects!**
-<<<<<<< HEAD
+
  (maze-game)
 
