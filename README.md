@@ -1,34 +1,4 @@
-<<<<<<< HEAD
-# fibtool - C build practice for Jenkins
-
-A small CLI (Fibonacci series / primes) deliberately split into several build
-artifacts so the pipeline has real work to do. Triggered by a PR webhook.
-
-```
-include/   public headers
-src/       main.c, fibonacci.c, primes.c, parse.c  -> libfibcore.a  (static)
-           fibutil.c                               -> libfibutil.so (shared)
-tests/     tiny test framework that emits JUnit XML
-version.txt  "Build N" - overridden by Jenkins' BUILD_NUMBER
-Makefile / Jenkinsfile
-```
-
-## Usage
-
-```sh
-make                       # release build  -> artifacts/release/bin/fibtool
-make BUILD=debug           # separate dir   -> artifacts/debug/
-make BUILD=asan            # sanitizers     -> artifacts/asan/
-make test WERROR=1         # build, run unit + smoke tests, write JUnit XML
-make lint                  # needs cppcheck
-make dist                  # artifacts/fibtool-<ver>-<sha>-release.tar.gz
-make help
-
-artifacts/release/bin/fibtool -n 100       # fibonacci up to 100
-artifacts/release/bin/fibtool -p -n 100    # primes up to 100
-FIBTOOL_LOG=debug artifacts/release/bin/fibtool -V
-```
-
+Buikd gmae test!
 ## What the build exercises
 
 | Concept                         | Where                                           |
@@ -82,6 +52,9 @@ FIBTOOL_LOG=debug artifacts/release/bin/fibtool -V
 </div>
 
 ---
+=======
+Test build code!
+>>>>>>> 9d9ad2f (Edit README.me)
 
 # 🧩 Maze Escape
 
@@ -245,4 +218,6 @@ If you like this project, don’t forget to ⭐ **star** it and **follow** me!
 Your **support** helps me create more projects. 🚀  
 
 🔗 **Explore more of my work on [GitHub](https://github.com/marsdevx?tab=repositories) and discover other exciting projects!**
->>>>>>> 8758a5e (maze-game)
+<<<<<<< HEAD
+ (maze-game)
+
